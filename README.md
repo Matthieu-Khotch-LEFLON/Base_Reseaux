@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     char *port = argv[3];
 
 
-    printf("Vous avez demandé le fichier %s, sur le serveur %s qui est sur le port %s\n", file, server_name, port);
+    printf("You have requested the file %s, on the server %s, which is on port %s\n", file, server_name, port);
 
     return 0;
 }
