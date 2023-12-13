@@ -77,4 +77,4 @@ int main(int argc, char *argv[]) {
 }
 
 ```
-![SREENSHOT](Assets/TerminalQuestion2.png)
+![SCREENSHOT](Assets/TerminalQuestion2.png)
