@@ -124,7 +124,7 @@ int main(int argc, char *argv[]) {
 		exit(EXIT_FAILURE);
 	}
 
-if (sock <0){
+	if (sock <0){
 		perror("socket error");
 		exit(EXIT_FAILURE);
 	}
