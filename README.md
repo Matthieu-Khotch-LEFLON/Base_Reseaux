@@ -28,6 +28,7 @@ int main(int argc, char *argv[]) {
 ```
 ![SCREENSHOT](Assets/TerminalQuestion1.png)
 
+=> For this first question, we just created 3 variables which take each a define argument during the execution.
 
 ## Question 2 :
 
@@ -77,6 +78,7 @@ int main(int argc, char *argv[]) {
 }
 
 ```
+=> Here, we used the getaddrinfo to obtain the adress server.
 
 ## Question 3 :
 
@@ -129,6 +131,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+=> Then, we have created a socket to be able to connect with a server.
 ## Question 4.a) :
 
 ```ruby
@@ -197,5 +200,6 @@ int main(int argc, char *argv[]) {
 ```
 ![SCREENSHOT](Assets/TerminalQuestion4a.png)
 
+=> Finally, we made a RRQ request to the server we want to access and read his documents.
 
  
