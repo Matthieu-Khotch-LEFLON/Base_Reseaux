@@ -195,7 +195,7 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 ```
-![SCREENSHOT]((Assets/TerminalQuestion4.a).png)
+![SCREENSHOT](Assets/TerminalQuestion4a.png)
 
 
  
