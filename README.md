@@ -8,8 +8,8 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    /*Check if the correct number of command-line arguments is provided*/
-    if (argc != 4) {
+
+    if (argc != 4) {		/* We check if the number of arguments is correct */
         fprintf(stderr, "Usage: %s <file> <server_name> <port>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     
     char *file = argv[1];
     char *server_name = argv[2];
-    char *port = argv[3];
+    char *port = argv[3];		/* Here we've created 3 pointer to get the arguments entered during the program's execution */
 
 
     printf("You have requested the file %s, on the server %s, which is on port %s\n", file, server_name, port);
@@ -186,12 +186,16 @@ int main(int argc, char *argv[]) {
 	strcpy(buffer+2, argv[1]);
 	size_t padding = strlen(buffer+2);
 	strcpy(buffer+2+padding+1,"octet");
-	size_t padding2 = strlen(buffer+3+padding);
+	size_t padding2 = strlen(buffer+3+padding);	/* We've created the complete serie of informations that we've to send to create a RRQ's request */
 	
-	if (sendto(sock, buffer, padding+padding2+4, 0, res->ai_addr, res->ai_addrlen) == -1){
+	if (sendto(sock, buffer, padding+padding2+4, 0, res->ai_addr, res->ai_addrlen) == -1){	/* We send the request to the server and test if the request has been send succesfully or not */
 		perror("send RRQ");
 		exit(EXIT_FAILURE);
 	}
 	return 0;
 }
+```
+![SCREENSHOT](Assets/TerminalQuestion4.a.png)
+
+
  
